@@ -7,37 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-    <script src="script,js" defer></script>
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 <body>
     <div class="container">
         <div class="display">
+            <div class="expression">
+                <span class="expression-value"></span>
+            </div>
             <div class="result">
-                <span class="result-value">123</span>
+                <span class="result-value"></span>
             </div>
         </div>
         <div class="buttons">
             <div class="buttons-operations">
-                <button class="button">+</button>
-                <button class="button">-</button>
-                <button class="button">*</button>
-                <button class="button">/</button>
-                <button class="button">AC</button>
+                <button class="button operator" value="+">+</button>
+                <button class="button operator" value="-">-</button>
+                <button class="button operator" value="*">*</button>
+                <button class="button operator" value="/">/</button>
+                <button class="button" id="reset">AC</button>
             </div>
             <div class="button-numbers">
-                <button class="button">7</button>
-                <button class="button">8</button>
-                <button class="button">9</button>
-                <button class="button">4</button>
-                <button class="button">5</button>
-                <button class="button">6</button>
-                <button class="button">1</button>
-                <button class="button">2</button>
-                <button class="button">3</button>
+                <button class="button operand" value=7>7</button>
+                <button class="button operand" value=8>8</button>
+                <button class="button operand" value=9>9</button>
+                <button class="button operand" value=4>4</button>
+                <button class="button operand" value=5>5</button>
+                <button class="button operand" value=6>6</button>
+                <button class="button operand" value=1>1</button>
+                <button class="button operand" value=2>2</button>
+                <button class="button operand" value=3>3</button>
                 <button class="button">.</button>
-                <button class="button">0</button>
-                <button class="button">=</button>
+                <button class="button operand" value=0>0</button>
+                <button class="button" id="equals">=</button>
             </div>
         </div>
     </div>

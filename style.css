@@ -57,7 +57,7 @@ button {
     flex-grow: 1;
     border-radius: 0;
     background-color: #BBE1FA;
-    border: 1px solid #1B262C;
+    border: 5px solid #1B262C;
     font-family: "Orbitron", sans-serif;
     /*font-optical-sizing: auto;*/
     font-size: 25px;
@@ -71,6 +71,7 @@ button:hover {
 }
 
 .button-numbers button {
+    border-radius: 15px;
     flex-basis: calc(33.333% - 10px);
 }
 
@@ -81,6 +82,10 @@ button:hover {
     margin: 10px;
     border-radius: 50%;
     margin-top: 0;
+    background-color: orangered;
+}
+.buttons-operations button:hover {
+    background-color: red;
 }
 
 .display {
@@ -95,4 +100,11 @@ button:hover {
     font-size: 35px;
     font-family: "Orbitron", sans-serif;
     font-weight: 800;
+}
+
+.expression-value {
+    color: white;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
 }
