@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 400px;
+    border: 2px solid #1B262C;
+    display: flex;
+    flex-direction: column;
+    background-color: #1B262C;
+    border-radius: 10px;
+}
+
+.display {
+    height: 150px;
+    border-radius: 10px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.buttons {
+    margin: 10px 10px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.button-numbers {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 75%;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.buttons-operations {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    flex-grow: 1;
+    border-radius: 0;
+    background-color: #BBE1FA;
+    border: 1px solid #1B262C;
+    font-family: "Orbitron", sans-serif;
+    /*font-optical-sizing: auto;*/
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.button-numbers button {
+    flex-basis: calc(33.333% - 10px);
+}
+
+.buttons-operations button {
+    aspect-ratio: 1; 
+    width: 100%; 
+    max-width: calc(25% - 20px); 
+    margin: 10px;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+}
+.result-value {
+    color: white;
+    font-size: 35px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+}
